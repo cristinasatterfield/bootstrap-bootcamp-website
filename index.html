@@ -12,7 +12,57 @@
 </head>
 
 <body>
-  Hello
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <div class="container">
+      <a href="#" class="navbar-brand">Frontend Bootcamp</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#learn" class="nav-link">What You'll Learn</a>
+          </li>
+          <li class="nav-item">
+            <a href="#questions" class="nav-link">Questions</a>
+          </li>
+          <li class="nav-item">
+            <a href="#instructors" class="nav-link">Instructors</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Showcase -->
+  <!-- 'p-5' adds the largest padding available to ALL sides p-1 is smallest -->
+  <!-- the combo of the "text-center" and "text-sm-start" results in the text being centered
+  on small (mobile) screens and after the small breakpoint, the text is aligned to the start -->
+  <section class="bg-dark text-light p-5 text-center text-sm-start">
+    <div class="container">
+      <!-- "d-sm-flex" displays as flex box until the small breakpoint is hit -->
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <div>
+          <!-- "text-warning" a text-color class which displays the text in the warning color, which is yellow by default -->
+          <h1>Become a <span class="text-warning">Web Developer</span></h1>
+          <!-- "lead" class makes the text a little bigger "my-4" class adjust the margin on the y-axis-->
+          <p class="lead my-4">
+            We focus on teaching our students the fundamentals of the latests
+            and greatest technologies to pepare them for their first dev role
+          </p>
+          <button class="btn btn-primary btn-lg">Start The Enrolmment</button>
+        </div>
+        <!-- "img-fluid w-50" keeps the image bound to it's container and make it's width 50% of original size-->
+        <!-- the combo of the "d-none" (display none) and "d-sm-block" (display small block) classes
+        means that before the sm breakpoint the image displays as a block, but after the sm breakpoint
+        it does not display -->
+        <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="">
+      </div>
+    </div>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
