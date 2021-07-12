@@ -41,7 +41,7 @@
   <!-- 'p-5' adds the largest padding available to ALL sides p-1 is smallest -->
   <!-- the combo of the "text-center" and "text-sm-start" results in the text being centered
   on small (mobile) screens and after the small breakpoint, the text is aligned to the start -->
-  <section class="bg-dark text-light p-5 text-center text-sm-start">
+  <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
     <div class="container">
       <!-- "d-sm-flex" displays as flex box until the small breakpoint is hit -->
       <div class="d-sm-flex align-items-center justify-content-between">
@@ -60,6 +60,21 @@
         means that before the sm breakpoint the image displays as a block, but after the sm breakpoint
         it does not display -->
         <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="bg-primary text-light p-5">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+        <div class="input-group news-input">
+          <input type="text" class="form-control" placeholder="Enter Email" />
+          <button class="btn btn-dark btn-lg" type="button">
+            Button
+          </button>
+        </div>
       </div>
     </div>
   </section>
